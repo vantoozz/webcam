@@ -94,14 +94,49 @@ textarea {
    ========================================================================== */
 
 
+video {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #ccc;
+}
 
 
+.grayscale {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.sepia {
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -ms-filter: sepia(1);
+  -o-filter: sepia(1);
+  filter: sepia(1);
+}
+.blur {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+}
 
+.brightness{
+  -webkit-filter: brightness(50%); 
+  -moz-filter: brightness(50%); 
+  -ms-filter: brightness(50%); 
+  -o-filter: brightness(50%); 
+  filter: brightness(50%); 
+}
 
-
-
-
-
+.contrast{
+  -webkit-filter: contrast(200%);   
+  -moz-filter: contrast(200%);   
+  -ms-filter: contrast(200%);   
+  -o-filter: contrast(200%);   
+  filter: contrast(200%);   
+}
 
 
 
