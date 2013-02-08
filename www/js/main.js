@@ -5,7 +5,6 @@ var onFailSoHard = function(e) {
 var webcamvideo = document.getElementById('webcamvideo');
 
 if(navigator.getUserMedia){
-	console.log(webcamvideo);
 	navigator.getUserMedia({ video: true}, function(stream) {
 		webcamvideo.src = window.URL.createObjectURL(stream);
 		
