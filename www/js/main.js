@@ -48,6 +48,7 @@ $(function(){
 	var words;
 
 	var phrase=$('#phrase');
+	var overlay=$('#overlay');
 
 	var recognition = new webkitSpeechRecognition();
 	recognition.continuous = true; //meaning that when the user stops talking, speech recognition will not end
@@ -86,13 +87,13 @@ $(function(){
 	recognition.onstart = function() {
     	recognizing = true;
     	words={};
-    	$('.start_recognizing').attr('disabled', 'disabled');
+    	overlay.fadeOut();
   	}
 	
 	
 	recognition.onend = function() {
     	recognizing = false;
-    	$('.start_recognizing').removeAttr('disabled');
+    	overlay.fadeIn();
     }
 	
 	$('.start_recognizing').on('click', function(){

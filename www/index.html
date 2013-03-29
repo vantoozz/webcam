@@ -13,12 +13,16 @@
         <link rel="stylesheet" href="/css/main.css">
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
-        
-        <button class="start_recognizing">Start Recognizing</button>
+    <body>        
         <div id="phrase"></div>
         <div id="results"></div>
-        <video autoplay id="webcamvideo"></video>
+        
+        <div id="overlay">
+            <div class="button_wrapper">
+                <span class="start_recognizing">Включить микрофон</span>
+            </div>
+        </div>
+        
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
