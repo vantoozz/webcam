@@ -86,6 +86,7 @@ $(function(){
 	
 	recognition.onstart = function() {
     	recognizing = true;
+    	phrase.empty();
     	words={};
     	overlay.fadeOut();
   	}
@@ -93,6 +94,7 @@ $(function(){
 	
 	recognition.onend = function() {
     	recognizing = false;
+    	phrase.empty();
     	overlay.fadeIn();
     }
 	
