@@ -100,8 +100,20 @@ textarea {
   display: block;
   margin: 0 auto;
   width: 100%;
+  display: none;
 }
 
+
+.instagram_photo{
+	width: 100px;
+	float: left;
+	height: 140px;
+}
+
+.instagram_photo p{
+	font-size: 10px;
+	text-align: center;
+}
 
 .grayscale {
   -webkit-filter: grayscale(1);
