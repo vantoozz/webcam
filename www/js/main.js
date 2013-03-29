@@ -32,7 +32,7 @@ if(false && navigator.getUserMedia){
 
 $(function(){
 	if (!('webkitSpeechRecognition' in window)) {
-		$('body').prepend('<h1>Ваш браузер не поддерживает распознование речи</h1>');
+		$('#overlay').html('<h1>Ваш браузер не поддерживает распознование речи, используйте Google Chrome</h1>');
 		return;
 	}
 

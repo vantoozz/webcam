@@ -104,6 +104,11 @@ textarea {
 	left: 0;	
 }
 
+#overlay h1{
+	color: #eeeeee;
+	text-align: center;
+}
+
 
 .button_wrapper{
 	margin: 200px auto 0;
